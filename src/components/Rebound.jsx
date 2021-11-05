@@ -6,7 +6,7 @@ const Rebound = () => {
 			<h3 className='text-4xl font-semibold'>
 				Pass, rebound and be a Team Player.
 			</h3>
-			<h4 className='font-light text-xl'>
+			<h4 className='font-normal text-xl text-gray-500'>
 				Experience Basketball like never before, through playing
 				collectable digital cards.
 			</h4>

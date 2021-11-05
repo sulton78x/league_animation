@@ -12,12 +12,12 @@ const Navbar = () => {
 	}
 
 	return (
-		<>
+		<div className=''>
 			<motion.nav className='bg-black font-raleway fixed h-14 sm:h-16 md:h-16 flex border-b border-gray-50 items-center justify-between inset-x-0 top-0 px-4 sm:px-7 md:px-10'>
 				<div className='flex gap-x-10 z-50'>
-					{/* Toggle Menu */}
+					{/* Left Side -- Toggle Menu */}
 					<button
-						className='hidden transition '
+						className='hidden sm:inline-flex transition '
 						onClick={handleSidebar}
 					>
 						<Menu className='text-white hover:text-blue-500 focus:text-blue-500 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6' />
@@ -25,7 +25,7 @@ const Navbar = () => {
 					{/* Logo */}
 					<Logo />
 				</div>
-				<div className='font-roboto whitespace-nowrap flex items-center gap-2 sm:gap-5 md:gap-10'>
+				<div className='font-roboto whitespace-nowrap flex items-center gap-2 sm:gap-4 md:gap-8'>
 					<button className='hidden sm:inline-flex text-white border text-sm sm:text-lg md:text-lg border-gray-50 py-1 px-4 rounded-full font-normal outline-none  focus:outline-none mr-2   whitespace-nowrap'>
 						Sign In
 					</button>
@@ -33,7 +33,10 @@ const Navbar = () => {
 						Sign Up
 					</motion.button>
 					{/* Toggle Menu */}
-					<button className='transition ' onClick={handleSidebar}>
+					<button
+						className='transition sm:hidden'
+						onClick={handleSidebar}
+					>
 						<Menu className='text-white hover:text-blue-500 focus:text-blue-500 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6' />
 					</button>
 				</div>
@@ -91,7 +94,7 @@ const Navbar = () => {
 							</li>
 						</ul>
 						{/* Authentication Buttons */}
-						<div className='flex flex-col gap-y-6 w-full font-bold'>
+						<div className='flex flex-col gap-y-6 w-full font-bold sm:hidden'>
 							<button className='border border-black text-gray-50 rounded-full py-3'>
 								Sign In
 							</button>
@@ -102,7 +105,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
 

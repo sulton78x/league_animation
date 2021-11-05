@@ -9,13 +9,7 @@ const CollectibleCard = ({ image }) => {
 			className=''
 		>
 			<div className='relative w-16 h-20 object-contain border border-white rounded-lg overflow-hidden object-center'>
-				<Image
-					src={image}
-					alt='nft'
-					width={80}
-					height={80}
-					layout='fill'
-				/>
+				<Image src={image} alt='nft' layout='fill' />
 			</div>
 		</motion.div>
 	)
